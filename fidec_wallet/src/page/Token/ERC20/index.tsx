@@ -25,7 +25,8 @@ import "./styles.scss";
 import { setLoading } from "../../../store/Support/Loading/LoadingSlice";
 import { setDisableHeader } from "../../../store/StoreComponents/Accounts/accounts";
 // eslint-disable-next-line import/no-unresolved
-import { CovalentClient } from "@covalenthq/client-sdk";
+import ICPProvider from "../../../provider/providerICP/ICPProvider";
+import { evmRpcActor } from "../../../provider/providerICP/evm-rpc-canister";
 
 const ERC20 = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -50,13 +51,10 @@ const ERC20 = () => {
 
   const web3 = new Web3(url);
   const abi: any = abiERC20.abi;
-  const client = new CovalentClient("cqt_rQHmtbyfHRKJ4PT9dQxcKXQk8KKm");
+  const client = new ICPProvider(evmRpcActor);
   const getBalance = async () => {
     dispatch(setLoading(true));
-    await client.BalanceService.getNativeTokenBalance(
-      "eth-goerli",
-      address
-    ).then((result: any) => {
+    await client.getBalance(address).then((result: any) => {
       console.log(result);
       const amount = result.data.items[0].balance;
       dispatch(setBalance((Number(amount) / 10 ** 18).toString()));
