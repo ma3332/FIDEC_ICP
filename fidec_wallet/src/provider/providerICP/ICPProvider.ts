@@ -1,4 +1,3 @@
-// src/ICPProvider.ts
 import { ethers } from "ethers";
 
 class ICPProvider extends ethers.providers.BaseProvider {

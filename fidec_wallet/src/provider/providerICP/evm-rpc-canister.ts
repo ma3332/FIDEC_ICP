@@ -1,4 +1,3 @@
-// src/evm-rpc-canister.ts
 import { Actor, HttpAgent } from "@dfinity/agent";
 import {
   idlFactory as evmRpcIdlFactory,
