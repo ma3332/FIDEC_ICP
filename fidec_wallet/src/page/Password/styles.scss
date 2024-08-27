@@ -1,0 +1,75 @@
+.password--setup--container {
+    .title--text {
+        text-align: center;
+        color: var(--text-orange-primary);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 54px;
+    }
+
+    .title--done,
+    .title--already {
+        margin-top: 63px;
+    }
+
+
+    .title--check {
+        margin-top: 27px;
+        font-size: 19px;
+    }
+
+    .content--container {
+        padding: 0 17px 0;
+
+        .text--label {
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+            color: var(--text-yellow-primary);
+            margin-bottom: 11px;
+        }
+
+        .ant-input {
+            width: 186px;
+            height: 29px;
+            border: 1px solid var(--text-yellow-primary);
+            border-radius: 5px;
+            margin-bottom: 16px;
+            margin-right: 40px;
+        }
+
+        .text--desc {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: var(--text-orange-primary);
+        }
+
+        .text--warning {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: var(--text-red-primary);
+            margin: -10px 0 10px;
+        }
+
+        .btn--primary {
+            width: 324px;
+            height: 40px;
+            background: var(--text-yellow-primary);
+            border-radius: 100px;
+            margin-top: 12px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            position: absolute;
+            bottom: 41px;
+        }
+
+        .btn--primary.btn--done {
+            margin-top: 80px;
+        }
+    }
+}

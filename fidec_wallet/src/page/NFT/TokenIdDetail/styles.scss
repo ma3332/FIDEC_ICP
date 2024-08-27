@@ -1,0 +1,91 @@
+.token--detail {
+
+
+    .account--name {
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #C36027;
+            padding: 5px;
+        }
+
+        .ant-typography {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            color: var(--text-yellow-primary);
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 49px;
+            text-align: center;
+            color: var(--text-yellow-primary);
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 30px;
+            padding: 19px 30px;
+        }
+
+        .btn--group {
+            display: flex;
+            justify-content: space-around;
+
+            button {
+                width: 118px;
+                height: 36px;
+                left: 37px;
+                top: 254px;
+                background: var(--text-yellow-primary);
+                border-radius: 5px;
+                color: white;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .text-token {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+
+    }
+
+    .info--container {
+        height: 180px;
+        border-top: 1px solid var(--text-yellow-primary);
+        border-bottom: 1px solid var(--text-yellow-primary);
+        padding: 10px 13px;
+        overflow: auto;
+
+        p {
+            font-weight: 400;
+            font-size: 9px;
+            line-height: 11px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+        }
+    }
+}

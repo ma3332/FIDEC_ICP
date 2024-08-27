@@ -1,0 +1,45 @@
+.detail--container {
+    .detail--content {
+        position: absolute;
+        height: 461px;
+        width: 100%;
+        top: 54px;
+        background: #252525;
+        border-radius: 5px;
+        text-align: center;
+        color: #FFFFFF;
+
+        .text--title {
+            margin: 11px 0 23px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+
+        }
+
+        .account--name {
+            margin: 23px 0 5px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            padding: 5px;
+        }
+
+        .string--address {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        button.btn--primary {
+            width: 198px;
+            height: 38px;
+            background: #141010;
+            border-radius: 10px;
+            margin-top: 27px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}

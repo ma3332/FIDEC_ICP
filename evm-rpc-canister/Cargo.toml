@@ -1,0 +1,72 @@
+[package]
+name = "evm_rpc"
+version = "0.1.0"
+description = "Interact with EVM blockchains from the Internet Computer."
+authors = ["DFINITY Foundation"]
+readme = "README.md"
+edition = "2021"
+
+[profile.release]
+debug = false
+lto = true
+strip = true
+opt-level = 's'
+
+# Required by `ic-test-utilities-load-wasm`
+[profile.canister-release]
+inherits = "release"
+
+[dependencies]
+candid = { workspace = true }
+evm_rpc_types = { path = "evm_rpc_types" }
+getrandom = { workspace = true }
+ic-canisters-http-types = { workspace = true }
+ic-nervous-system-common = { workspace = true }
+ic-metrics-encoder = { workspace = true }
+ic-stable-structures = { workspace = true }
+ic-certified-map = { workspace = true }
+ic-cdk = { workspace = true }
+ic-cdk-macros = { workspace = true }
+ic-canister-log = { git = "https://github.com/dfinity/ic", rev = "5991b07d0e396b7885d5b4d4c917f7290dd70814", package = "ic-canister-log" }
+cketh-common = { git = "https://github.com/dfinity/ic", rev = "5991b07d0e396b7885d5b4d4c917f7290dd70814", package = "ic-cketh-minter" }
+maplit = "1.0"
+num = "0.4"
+num-traits = "0.2"
+num-derive = "0.4"
+serde = { workspace = true }
+serde_json = { workspace = true }
+url = "2.5"
+async-trait = "0.1"
+hex = "0.4"
+ethers-core = "2.0"
+
+[dev-dependencies]
+ic-ic00-types = { git = "https://github.com/dfinity/ic", rev = "release-2023-09-27_23-01" }
+ic-base-types = { git = "https://github.com/dfinity/ic", rev = "release-2023-09-27_23-01" }
+ic-config = { git = "https://github.com/dfinity/ic", rev = "release-2023-09-27_23-01" }
+ic-state-machine-tests = { git = "https://github.com/dfinity/ic", rev = "release-2023-09-27_23-01" }
+ic-test-utilities-load-wasm = { git = "https://github.com/dfinity/ic", rev = "release-2023-09-27_23-01" }
+assert_matches = "1.5"
+
+[workspace.dependencies]
+candid = { version = "0.9" }
+getrandom = { version = "0.2", features = ["custom"] }
+ic-canisters-http-types = { git = "https://github.com/dfinity/ic", rev = "release-2023-09-27_23-01" }
+ic-nervous-system-common = { git = "https://github.com/dfinity/ic", rev = "release-2023-09-27_23-01" }
+ic-metrics-encoder = "1.1"
+ic-stable-structures = "0.5"
+ic-certified-map = "0.4"
+ic-cdk = "0.10"
+ic-cdk-macros = "0.7"
+ic-cdk-bindgen = "0.1"
+num-bigint = "0.4.6"
+proptest = "1.5.0"
+serde = "1.0"
+serde_json = "1.0"
+
+
+[patch.crates-io]
+wasm-bindgen = { git = "https://github.com/dfinity/wasm-bindgen", rev = "9cde9c9a88c1fad13a8663277650e01b5671843e" }
+
+[workspace]
+members = ["e2e/rust", "evm_rpc_types"]

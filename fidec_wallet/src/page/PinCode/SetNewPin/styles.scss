@@ -1,0 +1,64 @@
+.newpin--page {
+    .text--title {
+        text-align: center;
+        color: var(--text-orange-primary);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .mb-16 {
+        margin-bottom: 16px;
+    }
+
+    .content--container {
+        padding: 0 17px 0;
+
+        .text--label {
+            font-weight: 400;
+            font-size: 13px;
+            color: var(--text-yellow-primary);
+        }
+
+        .text--desc {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: var(--text-orange-primary);
+            margin-top: 7px;
+        }
+
+        .text--warning {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: var(--text-red-primary);
+            margin: -10px 0 10px;
+        }
+
+        .btn--primary {
+            width: 100%;
+            height: 35px;
+            margin-top: 17px;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .btn--primary.btn--done {
+            margin-top: 80px;
+        }
+    }
+
+    .back--to--setting--text {
+        position: absolute;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 13px;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: 10px;
+    }
+}

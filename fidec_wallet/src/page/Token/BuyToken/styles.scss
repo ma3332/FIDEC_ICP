@@ -1,0 +1,43 @@
+.buy--token--page {
+    .text--title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: var(--text-yellow-primary);
+        margin: 10px 7px 0;
+    }
+
+    .buy--token--content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 380px;
+        overflow-y: scroll;
+
+        .token--item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            border-bottom: 1px solid #CEA742;
+            padding-bottom: 19px;
+
+            img {
+                width: 210px;
+                height: 117.68px;
+            }
+
+            button.btn--primary {
+                width: 180px;
+                height: 36px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+                margin-top: 19px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+}

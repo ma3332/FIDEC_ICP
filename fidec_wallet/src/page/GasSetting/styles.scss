@@ -1,0 +1,33 @@
+.gasSetting--page {
+    .content {
+        padding: 0 8px;
+
+        .text--title {
+            margin-bottom: 8px;
+            font-size: 28px;
+        }
+
+        .form--container {
+            margin-top: 50px;
+            .text--label {
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--text-gray-primary);
+                margin-bottom: 5px;
+            }
+
+            .ant-input {
+                height: 35px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                background: transparent;
+                color: var(--text-gray-primary);
+            }
+
+            button {
+                position: absolute;
+                transform: translate(50%, 50%);
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.send--token--page {
+    .ant-steps-item-title {
+        color: white !important;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    /* Track */
+    // ::-webkit-scrollbar-track {
+    //     box-shadow: inset 0 0 1px var(--text-gray-primary);
+    //     border-radius: 1px;
+    // }
+
+    // /* Handle */
+    // ::-webkit-scrollbar-thumb {
+    //     background: var(--text-gray-primary);
+    //     border-radius: 1px;
+    // }
+
+    .text--title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: #ecbf40;
+        margin: 7px 12px 18px;
+    } 
+ 
+}
+
+.box-modal {
+    h2.title {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+        margin-bottom: 21px;
+    }
+
+    .ant-input-suffix {
+        display: none !important;
+    }
+
+    input {
+        width: 100%;
+        height: 42px;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        color: white;
+    }
+
+    .text-warning {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #ff0000;
+        margin-top: 9px;
+    }
+
+    .button-group {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-evenly;
+
+        button {
+            width: 120px;
+            height: 36px;
+            border: 1px solid #0c95f8;
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #ffffff;
+            background: inherit;
+        }
+
+        button.btn-confirm {
+            background: #0c95f8;
+        }
+    }
+}

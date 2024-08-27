@@ -1,0 +1,186 @@
+.dapp--transaction--page {
+    color: white;
+
+    .text--title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: #ecbf40;
+        margin: 7px 12px 18px;
+    }
+
+    .input--address {
+        margin: 17px 9px;
+
+        .title {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .form {
+            input {
+                width: 100%;
+                height: 42px;
+                border: 1px solid #ffffff;
+                border-radius: 5px;
+                color: white;
+                padding: 13px 11px;
+                margin: 9px 0 14px;
+            }
+        }
+
+        .text--response {
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+            color: #00ff38;
+        }
+    }
+
+    .btn-container {
+        button {
+            width: 98px;
+            height: 27px;
+            left: 1px;
+            top: 238px;
+            background: #d9d9d9;
+            border-radius: 5px;
+            font-size: 12px;
+            line-height: 15px;
+            color: rgba(34, 34, 34, 0.5);
+        }
+
+        button.btn-active {
+            font-weight: 600;
+
+            color: #222222;
+        }
+    }
+
+    .content--container {
+        height: 240px;
+        background: #252525;
+        border-radius: 10px;
+        padding: 14px 12px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: white;
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 13px;
+
+            .text--bold {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                color: #ffffff;
+
+                span.tag {
+                    width: 25px;
+                    height: 15px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #0c95f8;
+                    padding: 3px 7px;
+                    border: 1px solid;
+                    border-radius: 5px;
+                    margin-left: 5px;
+                }
+            }
+
+            .flex-line {
+                display: flex;
+                justify-content: space-between;
+                width: 60%;
+            }
+
+            .ant-input {
+                width: 175px;
+                height: 21px;
+                background: #d9d9d9 !important;
+                border-radius: 5px;
+                padding: 3px 11px;
+                border: none;
+            }
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            margin: 7px;
+
+            .item {
+                width: 150px;
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 12px;
+            }
+
+            .text--active {
+                p {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #eec140;
+                }
+
+                span {
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 12px;
+                    color: #0c95f8;
+                }
+            }
+        }
+
+        .flex-end {
+            display: flex;
+            justify-content: flex-end;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+            gap: 21px;
+        }
+
+        .button--group {
+            display: flex;
+            justify-content: center;
+            gap: 47px;
+            margin-top: 20px;
+
+            .btn {
+                width: 98px;
+                height: 27px;
+                border-radius: 10px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+            }
+
+            .btn-reject {
+                border: 1px solid #0c95f8;
+                background: inherit;
+
+                color: #ffffff;
+            }
+
+            .btn-confirm {
+                background: #0c95f8;
+                color: #ffffff;
+                border: none;
+            }
+        }
+    }
+}

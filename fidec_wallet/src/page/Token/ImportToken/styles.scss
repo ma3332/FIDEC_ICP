@@ -1,0 +1,53 @@
+.import--token--page {
+    .content {
+        padding: 0 12px;
+
+        .text--title {
+            margin-bottom: 8px;
+            font-size: 28px;
+        }
+
+        .text--desc {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #c36027;
+            margin: 7px 0 16px;
+        }
+
+        .import--form--content {
+            margin-top: 30px;
+            .text--label {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #ffffff;
+            }
+
+            .ant-input {
+                height: 35px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                background: inherit;
+                color: var(--text-gray-primary);
+            }
+
+            .btn--primary {
+                width: 100%;
+                height: 40px;
+                font-weight: 500;
+                font-size: 16px;
+                margin-top: 30px;
+            }
+
+            .text--response {
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 13px;
+                height: 20px;
+                color: #f80c0c;
+            }
+        }
+    }
+}

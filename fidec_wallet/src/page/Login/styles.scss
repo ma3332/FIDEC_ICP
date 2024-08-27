@@ -1,0 +1,111 @@
+.ant-spin-container::after {
+    height: 100% !important;
+}
+
+.home--page {
+    // .ant-input {
+    //     border-bottom: 1px solid #dddd;
+    //     // color: white;
+    //     height: 30px;
+    // }
+    .input--row {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--button-primary);
+        margin-top: 10px;
+        .input--password {
+            width: 100%;
+            height: 30px;
+            color: var(--text-yellow-primary);
+            outline: none;
+            border: none;
+            background: inherit;
+        }
+    }
+
+    .text--container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .title--text {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.015em;
+        color: var(--text-yellow-primary);
+        margin: 0 0 3px;
+    }
+
+    .description--text {
+        margin: 0;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.015em;
+        color: var(--text-orange-primary);
+    }
+
+    .text--label {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 5px;
+    }
+
+    .text--error {
+        font-weight: 400;
+        color: var(--text-red-primary);
+        font-size: 11px;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.015em;
+    }
+
+    .ant-btn {
+        width: 100%;
+        height: 40px;
+        margin-top: 18px;
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        border-radius: 30px !important;
+    }
+
+    .text--detail {
+        font-size: 13px;
+        line-height: 14px;
+        text-align: center;
+    }
+
+    .footer--container {
+        position: absolute;
+        text-align: center;
+        bottom: 15px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        p {
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: -0.015em;
+            margin-bottom: 5px;
+
+            a {
+                padding: 5px 0;
+            }
+        }
+    }
+}

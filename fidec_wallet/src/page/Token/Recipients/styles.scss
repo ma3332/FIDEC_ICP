@@ -1,0 +1,51 @@
+.recipients--page {
+    color: white;
+
+    .ant-form-item-label>label {
+        height: 5px !important;
+        color: white !important;
+    }
+
+    .text--title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: #ecbf40;
+        margin: 7px 12px 18px;
+    }
+
+    .input--address {
+        margin: 17px 9px;
+
+        .title {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .form {
+            input {
+                width: 100%;
+                height: 42px;
+                border-radius: 5px;
+            }
+
+
+
+            .button {
+                height: 40px;
+                width: 100%;
+                margin-top: 25px;
+                font-weight: 700;
+            }
+        }
+
+        .text--response {
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+            color: #ff0000;
+            margin-bottom: 10px;
+        }
+    }
+}

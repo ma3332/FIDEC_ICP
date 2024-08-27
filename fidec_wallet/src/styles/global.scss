@@ -1,0 +1,262 @@
+html,
+body,
+#root {
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.3s;
+    content: "";
+  }
+
+  &:hover::after {
+    width: 100%;
+    opacity: 1;
+    transition: 0.3s;
+  }
+}
+
+.ant-descriptions-item-label,
+.fw500 {
+  font-weight: 600 !important;
+}
+
+.ant-checkbox {
+  .ant-checkbox-inner {
+    border-radius: 2px;
+  }
+}
+
+.ant-tabs-tab.ant-tabs-tab-active {
+  font-weight: 600;
+}
+
+.form-footer {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.ant-badge-status {
+  margin-right: 8px;
+}
+
+.ant-drawer-header {
+  display: none !important;
+}
+
+.sum-table {
+  font-weight: bold;
+}
+
+#g-recaptcha {
+  display: flex;
+  justify-content: center;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.rbc-day-slot .rbc-event,
+.rbc-day-slot .rbc-background-event {
+  border: none !important;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-menu-item {
+  margin-top: 0 !important;
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  left: unset;
+}
+
+.dynamic-delete-button {
+  position: relative;
+  top: 4px;
+  margin: 0 8px;
+  color: #999;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.ant-btn {
+  background-color: "#EEC140" !important;
+}
+
+.dynamic-delete-button:hover {
+  color: #777;
+}
+
+.dynamic-delete-button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+canvas {
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.width-select-custom {
+  width: calc(100% - 40px) !important;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.react-pdf__Page__canvas {
+  margin: auto;
+}
+
+.ant-descriptions-bordered .ant-descriptions-item-label,
+.ant-descriptions-bordered .ant-descriptions-item-content {
+  padding: 13px 20px !important;
+}
+
+.ant-form-item-label > label {
+  height: auto;
+  margin: 4px 0 !important;
+}
+
+.ant-form-item {
+  margin-bottom: 10px !important;
+}
+
+.ant-input-affix-wrapper {
+  border-radius: 5px !important;
+}
+
+.ant-form-vertical {
+  .ant-form-item {
+    margin-bottom: 10px !important;
+
+    .ant-form-item-label {
+      padding: 0 !important;
+    }
+  }
+}
+
+.ant-card {
+  height: 100%;
+
+  .ant-card-head-title {
+    white-space: pre-wrap;
+  }
+
+  .ant-card-head {
+    padding: 0 18px;
+  }
+
+  .ant-card-body {
+    padding: 18px;
+  }
+
+  .ant-drawer .ant-card-body,
+  .ant-modal .ant-card-body {
+    padding-top: 12px;
+  }
+}
+
+.ant-table-cell {
+  padding: 12px !important;
+
+  p,
+  .ant-typography {
+    margin-bottom: 0 !important;
+  }
+}
+
+.ant-table-thead {
+  .ant-table-cell {
+    font-weight: 600;
+    text-align: center !important;
+  }
+}
+
+.ant-table-small .ant-table-cell {
+  padding: 8px !important;
+}
+
+.li-hinh-thuc {
+  margin-top: 10px !important;
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(160, 160, 160, 0.2);
+  }
+
+  &.active {
+    background-color: rgba(160, 160, 160, 0.2);
+  }
+}
+
+.text-primary {
+}
+
+// Compatible with IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.tox-tinymce {
+  border: 1px solid #eee !important;
+  border-radius: 2px !important;
+}
+
+.tox-statusbar__branding {
+  display: none;
+}
+
+.apexcharts-canvas {
+  margin: auto;
+}

@@ -1,0 +1,198 @@
+.input--form--container {
+    margin: 0 10px;
+
+    .title--form {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+        margin-bottom: 9px;
+    }
+
+    .text--response {
+        position: absolute;
+        left: 10px;
+        top: 195px;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #ff0000;
+    }
+
+    .input--search--container {
+        display: flex;
+        justify-content: space-evenly;
+        border: 1px solid;
+        padding: 5px 12px;
+        align-items: center;
+        color: white;
+        border-radius: 5px;
+
+        .ant-input {
+            width: 85%;
+            border: 0;
+            margin-right: 10px;
+            border-radius: 2px !important;
+        }
+    }
+}
+
+.send--token--content {
+    h2.text--title {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: #ffffff;
+        margin: 18px 10px 0;
+    }
+    .content--detail {
+        height: 310px;
+        background: var(--background-header-color);
+        border-radius: 10px;
+        padding: 14px 12px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: white;
+
+        .displayFlex {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            align-items: center;
+
+            .text--bold {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                color: #ffffff;
+
+                button.tag {
+                    font-weight: 500;
+                    font-size: 13px;
+                    color: #0c95f8;
+                    padding: 3px 10px;
+                    border: 1px solid;
+                    border-radius: 2px;
+                    margin-left: 5px;
+                }
+            }
+
+            .flex-line {
+                display: flex;
+                justify-content: space-between;
+                width: 60%;
+            }
+
+            .ant-input {
+                width: 175px;
+                height: 27px;
+                background: #d9d9d9 !important;
+                border-radius: 5px;
+                padding: 3px 11px;
+                border: none;
+                margin-top: 10px;
+            }
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            margin: 7px;
+
+            .item {
+                width: 150px;
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 12px;
+            }
+
+            .text--active {
+                p {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #eec140;
+                }
+
+                span {
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 12px;
+                    color: #0c95f8;
+                }
+            }
+
+            .custom-radio-button {
+                font-weight: 500;
+                font-size: 15px;
+            }
+        }
+
+        .flex-end {
+            display: flex;
+            justify-content: flex-end;
+            font-size: 13px;
+            gap: 20px;
+        }
+
+        .button--group {
+            display: flex;
+            justify-content: center;
+            gap: 47px;
+            margin-top: 20px;
+        }
+    }
+    .content {
+        height: 150px;
+        background: var(--background-header-color);
+        // border-radius: 10px;
+        padding: 14px 12px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: white;
+        overflow-y: auto;
+
+        .account--item {
+            padding-bottom: 13px;
+
+            .ant-radio-wrapper {
+                display: flex;
+
+                // justify-content: space-between;
+                .flex {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 320px;
+                    margin-left: 5px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #ffffff;
+
+                    .import--tag {
+                        margin: 0 30px;
+                        width: 73px;
+                        height: 21px;
+                        background: #d9d9d9;
+                        border-radius: 5px;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: black;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

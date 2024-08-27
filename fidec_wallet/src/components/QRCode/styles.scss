@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    align-items: center;
+    line-height: 10px;
+    .container--qrPlaceholder {
+        .qr-image {
+            text-align: center;
+
+            .qr {
+                position: absolute;
+                left: 0;
+                right: 0%;
+                top: 18%;
+            }
+        }
+    }
+
+    .qrVideoMask {
+        display: flex;
+        justify-content: center; /* Căn giữa ngang */
+        align-items: center; /* Căn giữa dọc */
+        height: 100vh;
+    }
+
+    .qrContainer {
+        display: flex;
+        justify-content: center; /* Căn giữa ngang */
+        align-items: center; /* Căn giữa dọc */
+        border: 1px solid #969696;
+    }
+}
+
+.camera--dapp--container {
+    .qr--content {
+        section {
+            border-radius: 10px;
+        }
+    }
+}

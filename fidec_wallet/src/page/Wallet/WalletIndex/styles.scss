@@ -1,0 +1,68 @@
+.walletIndex--page {
+    .text--title {
+        margin: 11px 8px 23px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 24px;
+    }
+    .main {
+        color: var(--text-gray-primary);
+        margin-top: 20px;
+        .wallet--content {
+            padding: 0 8px;
+            background: #252525;
+            height: 300px;
+
+            .indexContainer {
+                margin-top: 10px;
+                overflow: auto;
+                .ant-radio-wrapper {
+                    display: flex;
+                    padding: 2px 0;
+                    .flex {
+                        display: flex;
+                        justify-content: space-around;
+                        width: 306px;
+                        margin-left: 5px;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+
+                    span {
+                        // width: 100%;
+                    }
+                }
+            }
+        }
+
+        .inputIndexContainer {
+            position: absolute;
+            top: 400px;
+            width: 100%;
+            padding: 10px 8px;
+            background: #252525;
+            color: var(--text-gray-primary);
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            .item {
+                width: 30%;
+                input {
+                    background: transparent;
+                    color: var(--text-gray-primary);
+                }
+            }
+        }
+        button {
+            position: absolute;
+            bottom: 105px;
+            transform: translate(60%, 50%);
+            display: flex;
+            margin: auto;
+            margin-top: 20px;
+        }
+    }
+}

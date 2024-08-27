@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Plus+Jakarta+Sans:wght@500&display=swap');
+
+@import url('./components/Headers/HeaderMain/styles.scss'); 
+@import url('./components/Headers/HeaderHome/styles.scss');
+@import url('./styles/global.scss');
+
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --text-yellow-primary: #DFB53C;
+    --button-primary: #DFB53C;
+    --text-orange-primary: #C36027;
+    --text-red-primary: #FF0000;
+    --text-blue-primary: #0C95F8;
+    --text-black-primary: #141010;
+    --text-gray-primary: #5C5C5C;
+    --background-color: #242424;
+    --background-header-color: #333333;
+ 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+
+html {
+    font-size: 62.5%; 
+    font-size: 16px;
+}
+
+body { 
+    font-family: 'Montserrat', sans-serif;
+    /* display: flex;
+    justify-content: center; */
+    color: var(--text-yellow-primary); 
+}
+
+.popup--header .css-3bmhjh-MuiPaper-root-MuiPopover-paper,
+.popup--header .MuiPaper-root {
+  background-color: var(--background-header-color) !important;
+  color: var(--text-gray-primary) !important;
+  border-radius: 4px;
+  box-shadow: none !important;
+  min-width: 265px !important;
+  top: 68px !important;
+  border-radius: none !important;
+  padding: 8px 8px 16px;
+  border: 1px solid #595959dd;
+
+  .title {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #ffffff;
+  }
+
+  .title--networks {
+    padding: 0 0 17px;
+  }
+
+  .ant-radio-group.ant-radio-group-outline {
+    max-height: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    .ant-radio {
+      margin-right: 3px;
+    }
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 1px var(--text-gray-primary);
+    border-radius: 1px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--text-gray-primary);
+    border-radius: 1px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--text-gray-primary);
+  }
+
+  .text--accounts {
+    .text--desc {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      color: white;
+    }
+  }
+
+  .search--bar {
+    margin: 8px 0 20px;
+  }
+
+  .ant-input {
+    width: 100%;
+    border: none;
+    height: 27px;
+    background: #d9d9d9 !important;
+    border-radius: 5px;
+    color: black !important;
+    padding: 0 10px !important;
+  }
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ /* -------spin---------- */
+ .ant-spin-blur {
+    opacity: 1!important;
+ }
+.ant-spin-dot-item {
+    background-color: #EEC140!important;
+}
+.ant-spin-blur::after {
+    opacity: 0.1!important;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-blue-primary);
+}
+
+.displayFlexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.displayFlexColumn {
+    display: flex!important;
+    flex-direction: column!important;
+}
+
+
+/* --------- button -------------  */
+button {
+    cursor: pointer;
+    border: none;
+}
+
+button a {
+    color: white;
+}
+
+.btn--gray--default {
+    width: 200px;
+    align-items: center;
+    display: flex;
+    width: 162px;
+    height: 36px;
+    background: #d9d9d9;
+    border-radius: 5px;
+    justify-content: center;
+    font-weight: 600;
+    transition: all ease-in-out 0.3s;
+    font-size: 16px;
+}
+
+.btn--gray--default:hover {
+    background: #b1b1b1;
+}
+
+.ant-btn {
+    background-color: var(--text-yellow-primary);
+}
+.btn {
+    font-size: 14px;
+    height: 32px;
+    padding: 4px 15px;
+    border-radius: 6px;
+}
+
+.btn--blue {
+    color: #fff;
+     background-color: #1677ff;
+     outline: none; 
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    touch-action: manipulation;
+    line-height: 1.5714285714285714;
+}
+
+.btn--blue:hover {
+    background-color: #015ddd;
+
+}
+
+.btn--blue--cancel {
+    background-color: transparent;
+    border: 1px solid #1070f7;
+    color: white;
+}
+
+.ant-modal-close {
+    color: white!important;
+}
+
+/* ---------- step ------------ */
+
+.ant-steps-horizontal.ant-steps-vertical {
+    display: flex;
+    flex-direction: row!important;
+}
+.ant-steps-item-title {
+color: white!important;
+}
+
+.ant-radio-group {
+    width: 100% !important;
+}
+
+.ant-radio-wrapper {
+    color: white !important;
+}
+
+.App {
+    min-width: 380px;
+    min-height: 650px;
+    overflow: none;
+    background-color: var(--background-color);
+    position: relative;
+}
+
+.main--container {
+    padding: 0 14px 0;
+}
+
+.row {
+    display: flex;
+}
+
+.ant-input {
+    outline: none !important;
+    /* background: inherit !important; */
+    /* color: var(--text-yellow-primary) !important; */
+}
+
+.ant-radio-wrapper {
+    display: flex;
+    align-items: center !important;
+}
+
+
+/* .ant-radio-wrapper {
+    display: flex;
+    align-items: center !important;
+} */
+
+/* ------- button ---------- */
+.ant-btn-primary {
+    background-color: var(--button-primary)!important;
+}
+
+.ant-btn-primary:not(:disabled):hover {
+    background-color: #a98a32!important;
+
+}
+.ant-btn.btn--submit,
+.btn--submit,
+.btn--primary {
+    /* background: var(--text-yellow-primary); */
+    background-color: var(--button-primary);
+    /* border-radius: 100px; */
+    color: white;
+    border-radius: 6px;
+}
+
+/*---------- Modal ---------*/
+.ant-modal-content, .ant-modal-header {
+    background-color: #3b3b3b!important;
+}
+
+.ant-modal-title {
+    color: white!important;
+}
+
+/* .ant-modal {
+ top: 300px!important;
+} */
+
+.text--title--small {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.text--title--small a {
+    color: var(--text-blue-primary);
+}

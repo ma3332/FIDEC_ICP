@@ -1,0 +1,20 @@
+[package]
+name = "e2e"
+version = "0.1.0"
+description = "End-to-end testing with a Rust canister."
+authors = ["DFINITY Foundation"]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+candid = { workspace = true }
+ic-certified-map = { workspace = true }
+ic-cdk = { workspace = true }
+ic-cdk-macros = { workspace = true }
+serde = { workspace = true }
+serde_bytes = "0.11"
+
+[build-dependencies]
+ic-cdk-bindgen = { workspace = true }

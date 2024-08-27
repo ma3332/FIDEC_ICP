@@ -1,0 +1,177 @@
+import CannotTokenText from "../../../components/Footers/CannotTokenText";
+import HeaderMain from "../../../components/Headers/HeaderMain/HeaderMain";
+import Navbar from "../../../components/Navbar";
+import "./styles.scss";
+import { useState } from "react";
+import { Typography } from "antd";
+
+const AccountDetail = () => {
+  const [editableStr, setEditableStr] = useState<string>("Account Name"); 
+  return (
+    <div className="detail--container">
+      <HeaderMain />
+      <div className="detail--content">
+        <p className="text--title">Account QR Code</p>
+        <svg
+          width="234"
+          height="234"
+          viewBox="0 0 234 234"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clipPath="url(#clip0_365_357)">
+            <path
+              d="M87.75 0H0V87.75H87.75V0ZM73.125 73.125H14.625V14.625H73.125V73.125Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M29.25 29.25H58.5V58.5H29.25V29.25Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M0 234H87.75V146.25H0V234ZM14.625 160.875H73.125V219.375H14.625V160.875Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M29.25 175.5H58.5V204.75H29.25V175.5Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M146.25 0V87.75H234V0H146.25ZM219.375 73.125H160.875V14.625H219.375V73.125Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M175.5 29.25H204.75V58.5H175.5V29.25Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M29.25 102.375H0V131.625H43.875V117H29.25V102.375Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M102.375 131.625H131.625V160.875H102.375V131.625Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M43.875 102.375H73.125V117H43.875V102.375Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M131.625 175.5H102.375V190.125H117V204.75H131.625V190.125V175.5Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M87.75 102.375V117H73.125V131.625H102.375V102.375H87.75Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M117 58.5H131.625V87.75H117V58.5Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M131.625 117V131.625H160.875V102.375H117V117H131.625Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M102.375 87.75H117V102.375H102.375V87.75Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M131.625 204.75H160.875V234H131.625V204.75Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M102.375 204.75H117V234H102.375V204.75Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M131.625 160.875H146.25V175.5H131.625V160.875Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M131.625 43.875V14.625H117V0H102.375V58.5H117V43.875H131.625Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M175.5 204.75H190.125V234H175.5V204.75Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M175.5 175.5H204.75V190.125H175.5V175.5Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M160.875 190.125H175.5V204.75H160.875V190.125Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M146.25 175.5H160.875V190.125H146.25V175.5Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M204.75 146.25V160.875H219.375V175.5H234V146.25H219.375H204.75Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M219.375 190.125H204.75V234H234V204.75H219.375V190.125Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M146.25 146.25V160.875H190.125V131.625H160.875V146.25H146.25Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+            <path
+              d="M175.5 102.375V117H204.75V131.625H234V102.375H204.75H175.5Z"
+              fill="white"
+              fillOpacity="0.9"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_365_357">
+              <rect width="234" height="234" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <Typography.Paragraph
+          editable={{ onChange: setEditableStr, tooltip: false }}
+          className="account--name"
+        >
+          {editableStr}
+        </Typography.Paragraph>
+        <p className="string--address">
+          0xb98Ef0896C9f1A175B97078f40097ea9fdf18588
+        </p>
+        <button className="btn--primary">Check Blockchain Scan</button>
+      </div>
+      <CannotTokenText />
+      <Navbar />
+    </div>
+  );
+};
+
+export default AccountDetail;

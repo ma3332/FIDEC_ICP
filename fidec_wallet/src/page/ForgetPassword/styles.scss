@@ -1,0 +1,63 @@
+.reset--pin--container {
+    .text--title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 25px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.015em;
+        color: var(--text-yellow-primary);
+    }
+
+    .text--desc {
+        font-weight: 700;
+        font-size: 16px;
+        margin: 5px 0 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.015em;
+        color: var(--text-orange-primary);
+    }
+
+    .form--container {
+        margin-top: 10px;
+
+        .css-dev-only-do-not-override-ph9edi.ant-input-affix-wrapper {
+            background: white !important;
+            input {
+                background: inherit;
+                color: black;
+            }
+            .ant-input-suffix {
+                span {
+                    color: white !important;
+                }
+            }
+        }
+        .text--detail {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 13px;
+            color: var(--text-yellow-primary);
+            margin: 10px 0 6px;
+        }
+
+        .new--password--form {
+            margin-bottom: 9px;
+        }
+
+        .btn {
+            width: 100%;
+            font-weight: 600;
+        }
+        .btn--desc {
+            font-weight: 400;
+            font-size: 12px;
+            text-align: center;
+            line-height: 15px;
+            color: var(--text-red-primary);
+        }
+    }
+}

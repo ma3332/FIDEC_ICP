@@ -1,0 +1,78 @@
+.dapp--connect--page {
+    .text--title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: var(--text-yellow-primary);
+        margin: 7px 0;
+    }
+
+    .qr-image {
+        text-align: center;
+
+        .qr {
+            position: absolute;
+            left: 0;
+            right: 0%;
+            top: 18%;
+        }
+    }
+
+    .dapp--content {
+        position: absolute;
+        top: 285px;
+        left: 16px;
+        right: 16px;
+        .input-search {
+            margin: 14px 0;
+            padding: 5px 7px;
+            border: 1px solid #ffffff;
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+
+            .ant-form-item.input {
+                input {
+                    align-items: center;
+                }
+            }
+
+            button.btn-primary {
+                height: 40px;
+                // background: #ECBF40;
+                font-weight: 500;
+            }
+
+            .ant-form.ant-form-horizontal {
+                display: flex;
+            }
+        }
+
+        .title {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #ffffff;
+            margin: 0 5px;
+            margin-bottom: 9px;
+        }
+
+        .content {
+            width: 360px;
+            height: 150px;
+            background: #252525;
+            border-radius: 10px;
+            overflow-y: auto;
+            padding: 18px 16px;
+            color: white;
+        }
+
+        ::-webkit-scrollbar {
+            width: 2px;
+        }
+    }
+    .ant-card {
+        height: 52px !important;
+    }
+}
